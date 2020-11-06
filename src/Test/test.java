@@ -4,17 +4,15 @@
  * and open the template in the editor.
  */
 package Test;
+import int101.book.*;
 import int101.foodtable.Menu;
-import int101.book.Food;
-import int101.book.ListFood;
-import int101.book.BookFood;
-/**
- *
- * @author Student
- */
+import int101.base.Persona;
 public class test {
     public static void main(String[] args) {
-       BookFood s1 = new BookFood(2);
-       s1.ListOfFood();
+        Booked s1 = new Booked();
+        s1.correctYourInfo("Jakarin","Chaibubpa",02345467);
+        s1.correctYourInfo("JJ","Rocker",015667526);
+        s1.check();
+
     }
 }
