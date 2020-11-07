@@ -16,17 +16,16 @@ public class Booked {
         this.history.PersonInfo(info);
         return this;
     }
-    public void check(){
-      this.history.check();
-    }
-    public Booked New(String firstname,String lastname,long number){
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.number = number;
-        this.history = new History();
-        this.history.PersonInfo(new Persona(firstname,lastname,number));
+    public Booked ListOfFood(){
+        for(ListFood list : ListFood.values()){
+            System.out.println(list);
+        }
         return this;
     }
+   public Booked OrderFood(){
+
+        return this;
+   }
 
 
 }

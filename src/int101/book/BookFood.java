@@ -16,12 +16,12 @@ public class BookFood {
         }
         return null;
     }    
-    public BookFood ListOfFood(){
-        for(ListFood list : ListFood.values()){
-            System.out.println(list);
-        }
-        return this;
-    }
+//    public BookFood ListOfFood(){
+//        for(ListFood list : ListFood.values()){
+//            System.out.println(list);
+//        }
+//        return this;
+//    }
     @Override
     public String toString() {
         String result = "";
