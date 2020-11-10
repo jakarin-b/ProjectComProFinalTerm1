@@ -9,13 +9,13 @@ package int101.base;
  *
  * @author Student
  */
-public class Persona {
+public class Personal {
     private String firstName;
     private String lastName;
-    private long phoneNumber;
+    private String phoneNumber;
     
     
-    public Persona(String firstName,String lastName,long phoneNumber){
+    public Personal(String firstName,String lastName,String phoneNumber){
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
@@ -26,18 +26,18 @@ public class Persona {
     public String getLastName(){
         return this.lastName;
     }
-    public long getPhoneNumber(){
+    public String getPhoneNumber(){
         return this.phoneNumber;
     }
-    public Persona setFirstname(String firstname) { 
+    public Personal setFirstname(String firstname) { 
         this.firstName = firstname; 
         return this; 
     }
-    public Persona setLastname(String lastname) { 
+    public Personal setLastname(String lastname) { 
         this.lastName = lastname; 
         return this; 
     }
-    public Persona setPhoneNumber(long phoneNumber){
+    public Personal setPhoneNumber(String phoneNumber){
         this.phoneNumber = phoneNumber;
         return this;
     }
