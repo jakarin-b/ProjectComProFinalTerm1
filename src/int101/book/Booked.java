@@ -6,15 +6,13 @@ public class Booked {
     private String firstname;
     private String lastname;
     private String number;
-    private History history;
-    public Booked correctYourInfo(String firstname,String lastname,String number){
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.number = number;
-        this.history = new History();
+    private History history = new History();
+    public Booked(){
+     
+    }
+    public void correctYourInfo(String firstname,String lastname,String number){
         info = new Personal(firstname,lastname,number);
         this.history.PersonInfo(info);
-        return this;
     }
     public void check(){
       this.history.check();
