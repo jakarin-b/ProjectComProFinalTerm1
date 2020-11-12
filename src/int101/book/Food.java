@@ -10,22 +10,23 @@ package int101.book;
  * @author Student
  */
 public class Food {
-    private ListFood list;
+    private String list;
     private int amount;
     private ListFood food[];
+    private History listlist;
     
     public Food(){
         
     }
-    public Food(ListFood list,int amount){
+    public Food(String list,int amount){
         this.list = list;
         this.amount = amount;
     }
-    public Food foodList(){
+    public void foodList(){
         for(int i = 0;i<=food.length;i++){
             System.out.println(food[i]);
         }
-        return this;
+
     }
     @Override
     public String toString() {

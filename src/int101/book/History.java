@@ -1,23 +1,39 @@
 package int101.book;
 import int101.base.Personal;
 public class History {
-private Personal HistoryPersona[];
+private Personal HistoryPersona[] = new Personal[10];
 private static int count=0 ;
+private Food HistoryFood[] = new Food[10];
+private static int count2=0;
 public History(){
-    HistoryPersona = new Personal[10];
+//    HistoryPersona = new Personal[10];
+
 }
-public History PersonInfo(Personal aa){
+public void PersonInfo(Personal aa){
     if (count < HistoryPersona.length) {
         HistoryPersona[count] = aa;
         count++;
-        return this;
+
     }
-    return null;
+
 }
-public void check(){
+public void FoodInfo(Food bb){
+    if(count2 < HistoryFood.length){
+        HistoryFood[count2] = bb;
+
+    }
+
+}
+    public void checkFood(){
+            for (int j = 0; j < count2; j++) {
+                System.out.println(HistoryFood[j]);
+            }
+        }
+public void checkPerson(){
     for(int i =0 ; i < count; i++){
         System.out.println(HistoryPersona[i]);
     }
+
 
 }
     @Override
@@ -29,6 +45,8 @@ public void check(){
         }
         return j;
     }
+
+
 }
 
 

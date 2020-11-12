@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60087566-f1db-4d17-8711-640457ac5e61" name="Default Changelist" comment="" />
+    <list default="true" id="60087566-f1db-4d17-8711-640457ac5e61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/int101/book/Booked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/int101/book/Booked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/int101/book/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/int101/book/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/int101/book/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/int101/book/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/int101/book/ListFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/int101/book/ListFood.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,6 +35,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1jv9927ZDrmxI6EXZl3mSpUHzaE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,9 +45,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BadmintonBooknaja" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,6 +57,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test.test" />
       <module name="ProjectComProFinalTerm1" />
@@ -55,17 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.test" />
@@ -73,6 +88,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="60087566-f1db-4d17-8711-640457ac5e61" name="Default Changelist" comment="" />
@@ -92,21 +110,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="747" y="329" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604681174698" />
-    <state width="1111" height="315" key="GridCell.Tab.0.bottom" timestamp="1604683182735">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1340" height="206" key="GridCell.Tab.0.bottom" timestamp="1605173890591">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1340" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1605173890591" />
     <state width="1111" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604683182735" />
-    <state width="1111" height="315" key="GridCell.Tab.0.center" timestamp="1604683182735">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1340" height="206" key="GridCell.Tab.0.center" timestamp="1605173890591">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1340" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1605173890591" />
     <state width="1111" height="315" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604683182735" />
-    <state width="1111" height="315" key="GridCell.Tab.0.left" timestamp="1604683182735">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1340" height="206" key="GridCell.Tab.0.left" timestamp="1605173890591">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1340" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1605173890591" />
     <state width="1111" height="315" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604683182735" />
-    <state width="1111" height="315" key="GridCell.Tab.0.right" timestamp="1604683182735">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1340" height="206" key="GridCell.Tab.0.right" timestamp="1605173890591">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1340" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1605173890591" />
     <state width="1111" height="315" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604683182735" />
     <state width="1111" height="315" key="GridCell.Tab.1.bottom" timestamp="1604683182736">
       <screen x="0" y="0" width="1920" height="1080" />

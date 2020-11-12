@@ -5,10 +5,11 @@
  */
 package int101.book;
 
-/**
- *
- * @author Student
- */
-public enum ListFood {
-    FRIED_CHICKEN,HAMBURGER,FRIEND_FRIES,OMLETS,STEAK,FRIED_RICE
+
+public  class ListFood {
+    private String[] List;
+public ListFood(){
+this.List = new String[]{"FRIED_CHICKEN","HAMBURGER","FRIEND_FRIES","OMLETS","STEAK","FRIED_RICE"};
+}
+
 }
