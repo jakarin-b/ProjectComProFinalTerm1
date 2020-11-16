@@ -11,5 +11,5 @@ public  class ListFood {
 public ListFood(){
 this.List = new String[]{"FRIED_CHICKEN","HAMBURGER","FRIEND_FRIES","OMLETS","STEAK","FRIED_RICE"};
 }
-
+//emum ของ status โต้ะ(จองแล้ว,ยังไม่จอง)
 }

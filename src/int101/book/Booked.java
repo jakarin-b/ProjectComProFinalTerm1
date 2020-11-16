@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Booked {
     private Personal info;
-    private Food InfoFood;
+   public Food InfoFood ;
+    private Food check;
     private ListFood list;
     private String firstname;
     private String lastname;
@@ -12,42 +13,52 @@ public class Booked {
     private History historyP = new History();
     private History historyF = new History();
     private String food;
-
+    private Scanner scn = new Scanner(System.in);
     private int amount;
-    public Booked(){
-     
+    int count = 0;
+
+    public Booked() {
+
     }
-    public void EnterYourInfo(){
+    public void start(){}
+    public void Infd(){
+
+    }
+
+    public void EnterYourInfo() {
         System.out.println("Enter your information");
-        Scanner fn = new Scanner(System.in);
-        this.firstname = fn.next();
-        Scanner ln = new Scanner(System.in);
-        this.lastname = ln.next();
-        Scanner nm = new Scanner(System.in);
-        this.number = nm.next();
-
-        info = new Personal(this.firstname,this.lastname,this.number);
+        this.firstname = scn.next();
+        this.lastname = scn.next();
+        this.number = scn.next();
+        info = new Personal(this.firstname, this.lastname, this.number);
         this.historyP.PersonInfo(info);
+        this.historyP.checkPerson();
     }
-public void EnterYourFood(){
-    System.out.println("Enter your food");
-    Scanner fd = new Scanner(System.in);
-    this.food = fd.next();
-    System.out.println("Enter your amount");
-    Scanner am = new Scanner(System.in);
-    this.amount = am.nextInt();
-    for(int i = 0;i<=10;i++){
-        if(this.food= list)
+//    String food,int amount
+    public void EnterYourFood() {
+        System.out.println("Enter your food");
+        this.food = scn.next();
+        System.out.println("Enter your amount");
+        this.amount = scn.nextInt();
+//this.food = food;
+//this.amount = amount;
+///ยังไม่เสร็จนะ if(count >= 1){
+////            this.InfoFood = null;
+////            count = 0;
+////        }
+////        count++;
+//
+        this.InfoFood = new Food(this.food, this.amount);
+        InfoFood.checkFood(this.food,this.amount);
+            this.historyF.FoodInfo(InfoFood);
+            this.historyF.checkFood();
+
+        }
+        public void checked(){}
+
+       public void check(){
+            this.historyP.checkPerson();
+       }
+
     }
-    this.InfoFood = new Food(this.food,this.amount);
-    this.historyF.FoodInfo(InfoFood);
 
-
-}
-
-
-    public void check(){
-      this.historyP.checkPerson();
-    }
-
-}
