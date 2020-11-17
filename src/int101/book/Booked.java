@@ -57,6 +57,7 @@ public class Booked {
 //        this.historyF.FoodInfo(InfoFood);
 //        this.historyF.checkFood();
         }
+    //แก้เสร็จแล้ว
         public void checked(){}
 
        public void check(){
