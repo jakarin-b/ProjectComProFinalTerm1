@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Booked {
     private Personal info;
-   public Food InfoFood ;
+    public Food InfoFood;
     private Food check;
-    private ListFood list;
     private String firstname;
     private String lastname;
     private String number;
@@ -36,23 +35,27 @@ public class Booked {
     }
 //    String food,int amount
     public void EnterYourFood() {
-        System.out.println("Enter your food");
-        this.food = scn.next();
-        System.out.println("Enter your amount");
-        this.amount = scn.nextInt();
-//this.food = food;
-//this.amount = amount;
-///ยังไม่เสร็จนะ if(count >= 1){
-////            this.InfoFood = null;
-////            count = 0;
-////        }
-////        count++;
-//
-        this.InfoFood = new Food(this.food, this.amount);
-        InfoFood.checkFood(this.food,this.amount);
-            this.historyF.FoodInfo(InfoFood);
-            this.historyF.checkFood();
-
+        this.InfoFood = new Food();
+        while(true) {
+            System.out.println("Enter your food");
+            this.food = scn.next();
+            System.out.println("Enter your amount");
+            this.amount = scn.nextInt(); 
+            if(this.InfoFood.checkFood(this.food)) {
+                this.InfoFood.setFoodOrder(this.food, this.amount);
+                break;
+            }
+        }
+        this.historyF.FoodInfo(InfoFood);
+        this.historyF.checkFood();
+//        System.out.println("Enter your food");
+//        this.food = scn.next();
+//        System.out.println("Enter your amount");
+//        this.amount = scn.nextInt();
+//        this.InfoFood = new Food(this.food, this.amount);
+//        InfoFood.checkFood(this.food,this.amount);
+//        this.historyF.FoodInfo(InfoFood);
+//        this.historyF.checkFood();
         }
         public void checked(){}
 
