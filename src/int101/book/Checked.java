@@ -5,7 +5,7 @@ public class Checked {
 private String[] food;
 private FoodList j = new FoodList();
 private History his = new History();
-    private Food[] ff ;
+private Food[] ff ;
 
 public  Checked(){
 
@@ -18,10 +18,10 @@ public  Checked(){
         return false;
     }
     //  แก้ด้วยขรั่บ
-    public void arrayFood (){
-    this.ff = his.getHistoryFood();
-    for(int i =0;i<ff.length;i++){
-        System.out.println(ff[i]);
-    }
-    }
+//    public void arrayFood (){
+//    this.ff = his.getHistoryFood();
+//    for(int i =0;i<ff.length;i++){
+//        System.out.println(ff[i]);
+//    }
+//    }
 }

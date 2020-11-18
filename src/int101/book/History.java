@@ -5,6 +5,8 @@ private Personal[] HistoryPersona = new Personal[10];
 private static int count=0 ;
 private Food[] HistoryFood = new Food[10];
 private static int count2=0;
+private Food[][] FoodFromInfo = new Food[10][];
+private static int count3;
 public History(){
 //    HistoryPersona = new Personal[10];
 
@@ -30,6 +32,11 @@ public void FoodInfo(Food bb){
         count2++;
     }
 
+}
+public void FoodEachPerson(){
+    if (count3 < FoodFromInfo.length){
+        FoodFromInfo[count3] = this.HistoryFood;
+    }
 }
 
     public void checkFood(){

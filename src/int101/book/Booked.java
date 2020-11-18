@@ -49,7 +49,7 @@ public class Booked {
             }
         }
         this.historyF.FoodInfo(InfoFood);
-        this.ch.arrayFood();
+        this.historyF.checkFood();
 //        System.out.println("Enter your food");
 //        this.food = scn.next();
 //        System.out.println("Enter your amount");
