@@ -14,6 +14,7 @@ public class Booked {
     private String food;
     private Scanner scn = new Scanner(System.in);
     private int amount;
+    private Checked ch;
     int count = 0;
 
     public Booked() {
@@ -35,19 +36,20 @@ public class Booked {
     }
 //    String food,int amount
     public void EnterYourFood() {
+        this.ch = new Checked();
         this.InfoFood = new Food();
         while(true) {
             System.out.println("Enter your food");
             this.food = scn.next();
             System.out.println("Enter your amount");
             this.amount = scn.nextInt(); 
-            if(this.InfoFood.checkFood(this.food)) {
+            if(this.ch.checkFood(this.food)) {
                 this.InfoFood.setFoodOrder(this.food, this.amount);
                 break;
             }
         }
         this.historyF.FoodInfo(InfoFood);
-        this.historyF.checkFood();
+        this.ch.arrayFood();
 //        System.out.println("Enter your food");
 //        this.food = scn.next();
 //        System.out.println("Enter your amount");

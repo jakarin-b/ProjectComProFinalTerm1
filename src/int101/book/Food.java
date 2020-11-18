@@ -7,26 +7,17 @@ package int101.book;
 import int101.book.Booked;
 
 
-
-
 public class Food {
     private String list;
     private int amount;
     private String[] food = new String[]{"FRIED_CHICKEN","HAMBURGER","FRIEND_FRIES","OMLETS","STEAK","FRIED_RICE"};
     private History listlist;
+    String[] j;
+    private FoodList a = new FoodList();
     private Booked book = new Booked();
     public Food(){
-        
+
     }
-   
-    
-    public boolean checkFood(String foodRecepit){
-        for(int i = 0; i < food.length; i++) {
-            if(foodRecepit.equals(food[i])) return true;
-        }
-        return false;
-    }
-    
     public void setFoodOrder(String list, int amount) {
         this.list = list;
         this.amount = amount;

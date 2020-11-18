@@ -9,6 +9,13 @@ public History(){
 //    HistoryPersona = new Personal[10];
 
 }
+public Personal[] getHistoryPersona(){
+    return HistoryPersona.clone();
+}
+public Food[] getHistoryFood(){
+    return  HistoryFood.clone();
+}
+
 public void PersonInfo(Personal aa){
     if (count < HistoryPersona.length) {
         HistoryPersona[count] = aa;
