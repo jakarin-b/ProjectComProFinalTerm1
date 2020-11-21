@@ -5,10 +5,7 @@
  */
 package int101.base;
 
-/**
- *
- * @author Student
- */
+
 public class Personal {
     private String firstName;
     private String lastName;
@@ -44,7 +41,7 @@ public class Personal {
 
     @Override
     public String toString() {
-        return "List : " + "Name : " + firstName + " " + lastName + ", Phone : " + phoneNumber;
+        return  "Name : " + firstName + " " + lastName + ", Phone : " + phoneNumber;
     }
     
 }

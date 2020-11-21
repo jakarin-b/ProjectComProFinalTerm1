@@ -9,18 +9,20 @@ import int101.foodtable.Menu;
 import int101.base.Personal;
 public class test {
     public static void main(String[] args) {
-//        Food s1 = new Food("FRIED_CHICKEN",10);
-//        s1.checkFood();
-       Booked s1 = new Booked();
-       s1.EnterYourFood();
+         Menu s4 = new Menu();
+         s4.start();
+//       Booked s1 = new Booked();
+//       s1.addFood();
+//        Booked s3 = new Booked();
+//        s3.again();
 //       s1.EnterYourInfo();
-//        s1.start();
+//Booked s1 = new Booked();
+//        s1.EnterYourInfo();
 //        s1.EnterYourInfo();
 ////        s1.EnterYourInfo("JJ","Rocker","015667526");
 ////        s1.EnterYourInfo("Chanon", "Rugdee", "0888979");
 //        s1.check();
-//        Food s2 = new Food("hja",FRIED_CHICKEN100);
-//        s2.foodList();
+
 
     }
 }

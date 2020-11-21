@@ -5,16 +5,15 @@
  */
 package int101.book;
 import int101.book.Booked;
-
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Food {
     private String list;
     private int amount;
-    private String[] food = new String[]{"FRIED_CHICKEN","HAMBURGER","FRIEND_FRIES","OMLETS","STEAK","FRIED_RICE"};
-    private History listlist;
-    String[] j;
-    private FoodList a = new FoodList();
-    private Booked book = new Booked();
+    private String[] food ;
+    private FoodList ls;
+
     public Food(){
 
     }
@@ -24,15 +23,15 @@ public class Food {
     }
 
 
-    public void foodList(){
-        for(int i = 0;i<=food.length;i++){
-            System.out.println(food[i]);
-        }
-
-    }
+//    public void foodList(){
+//        for(int i = 0;i<=food.length;i++){
+//            System.out.println(food[i]);
+//        }
+//
+//    }
     @Override
     public String toString() {
-        return "Food{" + "list=" + list + ", amount=" + amount + '}';
+        return "[Food:" +  list + ", amount:" + amount + ']';
     }
     
 }

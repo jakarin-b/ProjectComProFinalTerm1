@@ -5,16 +5,19 @@ public class Checked {
 private String[] food;
 private FoodList j = new FoodList();
 private History his = new History();
-private Food[] ff ;
+
 
 public  Checked(){
 
 }
     public boolean checkFood(String foodRecepit){
-        this.food = j.getListOfFood();
+        this.food = j.coppyListOfFood();
         for(int i = 0; i < food.length; i++) {
-            if(foodRecepit.equals(this.food[i])) return true;
+            if(foodRecepit.equals(this.food[i])) {
+                return true;
+            }
         }
+        System.out.println("please try again");
         return false;
     }
     //  แก้ด้วยขรั่บ
