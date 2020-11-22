@@ -1,27 +1,27 @@
 package int101.book;
+import int101.base.Food;
 import int101.base.Personal;
 import java.util.Scanner;
 
+
 public class Booked {
     private Personal info;
-    public Food InfoFood;
+    public Food infoFood;
+    private FoodList lst;
+    private History history = new History();
     private String firstname;
     private String lastname;
     private String number;
-    private History history = new History();
-    private Scanner scn = new Scanner(System.in);
-    private Checked ch;
-    private FoodList lst;
-    private boolean plusF = false;
     private int f;
     private int amount;
+    private boolean ch = false;
+    private String[] ps;
     private String food;
+    private String[] listofFood;
+    private String password ;
+    private Scanner scn = new Scanner(System.in);
 
-    public Booked() {
-
-    }
-
-    public void EnterYourInfo() {
+    public void enterYourInfo() {
         do {
         System.out.println("Enter your information");
         System.out.println("Name:");
@@ -35,13 +35,17 @@ public class Booked {
             this.f = scn.nextInt();
         }while(this.f !=1);
         info = new Personal(this.firstname, this.lastname, this.number);
-        this.history.PersonInfo(info);
+        this.history.personInfo(info);
 
     }
+      public void createPassword(){
+            System.out.println("Please create your password");
+            this.password = scn.next();
+        history.passInfo(this.password);
+          System.out.println("Complete to create password");
+      }
 
-    //    String food,int amount
     public void addFood() {
-        this.ch = new Checked();
         this.lst = new FoodList();
         while (true){
             while (true) {
@@ -51,19 +55,18 @@ public class Booked {
                 this.food = scn.next();
                 System.out.println("Choose your amount of food.");
                 this.amount = scn.nextInt();
-                if (this.ch.checkFood(this.food)) {
-                    this.InfoFood = new Food();
-                    this.InfoFood.setFoodOrder(this.food, this.amount);
-                    this.history.FoodInfo(InfoFood);
+                if (checkFood(this.food)) {
+                    this.infoFood = new Food();
+                    this.infoFood.setFoodOrder(this.food, this.amount);
+                    this.history.foodInfo(infoFood);
                     break;
                 }
-
             }
             if (again()) {
                 break;
             }
-    }
-        this.history.FoodEachPerson();
+                    }
+        this.history.foodEachPerson();
     }
 
     public boolean again() {
@@ -73,16 +76,15 @@ public class Booked {
         i = scn.nextInt();
         switch (i) {
             case 1:
-                this.plusF = false;
+                this.ch = false;
                 break;
             case 2:
-                this.plusF = true;
+                this.ch = true;
                 break;
             default:
                 System.out.println("please try again");
-
         }
-        return this.plusF;
+        return this.ch;
     }
     public void allInfoForEachPerson(){
         System.out.println("Your information");
@@ -92,6 +94,55 @@ public class Booked {
     public void allHistoryInfo(){
         this.history.allHistory();
 
+    }
+    public void changeYourInfo(){
+        System.out.println("please enter your No.to change");
+        this.f = scn.nextInt();
+        System.out.println("please enter your password");
+        this.password = scn.next();
+        if(checkPassword(this.f,this.password)){
+            history.setCount(f-1);
+            enterYourInfo();
+            System.out.println("Thank you");
+            allInfoForEachPerson();
+        }
+        else{
+            System.out.println("please try again.");
+        }
+    }
+    public void changeYourOrder(){
+        System.out.println("please enter your No.to change");
+        this.f = scn.nextInt();
+        System.out.println("please enter your password");
+        this.password = scn.next();
+        if(checkPassword(this.f,this.password)){
+            history.setCount(f-1);
+            addFood();
+            System.out.println("Thank you");
+            allInfoForEachPerson();
+        }
+    }
+    public boolean checkFood(String foodRecpit){
+        this.listofFood = lst.coppyListOfFood();
+        for(int i=0;i<listofFood.length;i++){
+            if(foodRecpit.equals(listofFood[i])) {
+                return true;
+            }
+        }
+        System.out.println("please try again");
+        return false;
+    }
+    public boolean checkPassword(int no,String passCh){
+        this.ps = history.getHistoryPass();
+        if(no-1 > ps.length){
+            return false;
+        }
+        else if(ps[no-1].equals(passCh)){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }

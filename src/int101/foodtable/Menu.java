@@ -4,18 +4,14 @@
  * and open the template in the editor.
  */
 package int101.foodtable;
-
-
 import int101.book.Booked;
-import int101.book.History;
+
 
 import java.util.Scanner;
 
 public class Menu {
     private Scanner scn = new Scanner(System.in);
     private int i = 0;
-    private int y = 0;
-
     Booked b1 = new Booked();
 
     public void start(){
@@ -28,20 +24,25 @@ public class Menu {
                  do{
                      System.out.println("select menu:");
                      System.out.println("1.New user\n"+"2.Change your information\n"+"3.Change your order\n"+"4.History Customer\n"+"0.Exit");
-                     this.y = scn.nextInt();
-                     switch (y){
+                     this.i = scn.nextInt();
+                     switch (i){
                          case 1:
-                             b1.EnterYourInfo();
+                             b1.enterYourInfo();
+                             b1.createPassword();
                              b1.addFood();
                              b1.allInfoForEachPerson();
                              break;
-                         case 2:
+                             case 2:
+                                 b1.changeYourInfo();
+                                 break;
                              case 3:
+                                 b1.changeYourOrder();
+                                 break;
                          case 4:
                            b1.allHistoryInfo();
                            break;
                      }
-                 }while (y !=0 );
+                 }while (i !=0 );
                 case 2: break;
                 default:
                     System.out.println("please try again");

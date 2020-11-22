@@ -17,27 +17,7 @@ public class Personal {
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
     }
-    public String getFirstName(){
-        return this.firstName;
-    } 
-    public String getLastName(){
-        return this.lastName;
-    }
-    public String getPhoneNumber(){
-        return this.phoneNumber;
-    }
-    public Personal setFirstname(String firstname) { 
-        this.firstName = firstname; 
-        return this; 
-    }
-    public Personal setLastname(String lastname) { 
-        this.lastName = lastname; 
-        return this; 
-    }
-    public Personal setPhoneNumber(String phoneNumber){
-        this.phoneNumber = phoneNumber;
-        return this;
-    }
+
 
     @Override
     public String toString() {

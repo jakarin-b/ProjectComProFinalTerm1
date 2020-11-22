@@ -12,6 +12,7 @@ public class test {
          Menu s4 = new Menu();
          s4.start();
 //       Booked s1 = new Booked();
+//       s1.createPassword();
 //       s1.addFood();
 //        Booked s3 = new Booked();
 //        s3.again();
