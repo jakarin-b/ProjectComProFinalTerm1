@@ -4,15 +4,12 @@
  * and open the template in the editor.
  */
 package int101.base;
-import int101.book.Booked;
-import int101.book.FoodList;
 
 
 public class Food {
     private String list;
     private int amount;
-    private String[] food ;
-    private FoodList ls;
+
 
     public void setFoodOrder(String list, int amount) {
         this.list = list;

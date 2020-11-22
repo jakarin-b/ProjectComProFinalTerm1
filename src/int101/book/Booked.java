@@ -1,5 +1,6 @@
 package int101.book;
 import int101.base.Food;
+import int101.base.FoodList;
 import int101.base.Personal;
 import java.util.Scanner;
 
