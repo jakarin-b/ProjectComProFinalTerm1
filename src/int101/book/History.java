@@ -92,10 +92,16 @@ public void historyFoodForEachOrder(){
 
 
 public void allHistory(){
-     for(int i=0;i < historyPersona.length;i++){
-         int k = 1;
-         System.out.println("No."+(i+1) +" "+"Info" + ":" +  historyPersona[i] + "\n" + "List of Food" + ":"+Arrays.deepToString(foodFromInfo[i]));
-     }
+    if(historyPersona.length == 0){
+        System.out.println("No one has booked.\n\n");
+    }
+    else {
+        for (int i = 0; i < historyPersona.length; i++) {
+
+            int k = 1;
+            System.out.println("No." + (i + 1) + " " + "Info" + ":" + historyPersona[i] + "\n" + "List of Food" + ":" + Arrays.deepToString(foodFromInfo[i]));
+        }
+    }
      }
 
 }

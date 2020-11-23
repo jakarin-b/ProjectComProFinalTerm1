@@ -23,7 +23,7 @@ public class Menu {
                 case 1:
                  do{
                      System.out.println("select menu:");
-                     System.out.println("1.New user\n"+"2.Change your information\n"+"3.Change your order\n"+"4.History Customer\n"+"0.Exit");
+                     System.out.println("1.New Order\n"+"2.Change your information\n"+"3.Change your order\n"+"4.History Customer\n"+"0.Exit");
                      this.i = scn.nextInt();
                      switch (i){
                          case 1:
