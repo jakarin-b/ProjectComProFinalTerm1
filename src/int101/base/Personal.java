@@ -6,12 +6,21 @@
 package int101.base;
 
 
+/**
+ * This class is get information of person from user
+ */
 public class Personal {
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    
-    
+
+
+    /**
+     * get information from user to type String
+     * @param firstName receive firstname from user
+     * @param lastName receive lastname from user
+     * @param phoneNumber receive phonenumber from user
+     */
     public Personal(String firstName,String lastName,String phoneNumber){
         this.firstName = firstName;
         this.lastName = lastName;

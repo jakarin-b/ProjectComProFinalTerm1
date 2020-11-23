@@ -8,6 +8,9 @@ import int101.book.*;
 import int101.foodtable.Menu;
 import int101.base.Personal;
 public class test {
+    /**
+     * @param args start program to class menu
+     */
     public static void main(String[] args) {
          Menu s4 = new Menu();
          s4.start();

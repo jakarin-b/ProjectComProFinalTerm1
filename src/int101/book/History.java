@@ -3,6 +3,9 @@ import int101.base.Food;
 import int101.base.Personal;
 import java.util.Arrays;
 
+/**
+ * This class is keep history of user from class Booked
+ */
 public class History {
 
 private Personal[] historyPersona = new Personal[0];
@@ -13,16 +16,29 @@ private static int count=0 ;
 private static int countS=0;
 private int s =0;
 
+    /**
+     * @return array of historyPass
+     */
 public String [] getHistoryPass(){
     return historyPass.clone();
 }
 
+    /**
+     * set count to same as No of user
+     * @param set No of user
+     */
 public void setCount(int set){
     this.s = count;
     this.count = set;
 
 }
 
+    /**
+     * This method keep history of person from all user to used it
+     * If count >= historyPersona.length . add index of array 1
+     * add all info to array historyPersona in index of count
+     * @param aa type firstname,lastname,phonenumber from class Personal
+     */
 public void personInfo(Personal aa){
 
     while (count >= historyPersona.length){
@@ -35,6 +51,12 @@ public void personInfo(Personal aa){
         historyPersona[count] = aa;
 
 }
+
+    /** This method keep history of password from all user to used it
+     * If count >= historyPass.length . add index of array 1
+     * add all info to array historyPass in index of count
+     * @param pp (type String form class Booked)
+     */
 public void passInfo(String pp){
     while(count >= historyPass.length){
         String[] w2 = new String[historyPass.length+1];
@@ -47,6 +69,12 @@ public void passInfo(String pp){
 
 }
 
+    /**
+     * This method keep history of food from each user to put it
+     * If countS >= foodInfo.length . add index of array 1
+     * add all info to array foodInfo in index of countS
+     * @param bb (types list,amount from class Food)
+     */
 public void foodInfo(Food bb){
 
        if(countS == -1){
@@ -65,6 +93,12 @@ public void foodInfo(Food bb){
         countS++;
 }
 
+    /**
+     * This method keep history of food from all user to used it
+     * If count >= foodEachPerson.length . add index of array 1
+     * add all info to array foodEachPerson in index of countS
+     * set countS to -1
+     */
 public void foodEachPerson(){
     while(count >= foodFromInfo.length){
         Food[][] e4 = new Food[foodFromInfo.length +1][];
@@ -78,6 +112,11 @@ public void foodEachPerson(){
 
 }
 
+    /**
+     * This method show all user to order food
+     * if s = 0 sout array of foodFromInfo[count] and set count = s and set s = 0
+     * else sout array of foodFromInfo[count] and set count++
+     */
 public void historyFoodForEachOrder(){
     if(this.s != 0){
         System.out.println(Arrays.deepToString(foodFromInfo[count]));
@@ -91,6 +130,9 @@ public void historyFoodForEachOrder(){
 }
 
 
+    /**
+     * This method show all information of person and order for all user to used it.
+     */
 public void allHistory(){
     if(historyPersona.length == 0){
         System.out.println("No one has booked.\n\n");

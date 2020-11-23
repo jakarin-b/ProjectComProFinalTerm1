@@ -9,11 +9,22 @@ import int101.book.Booked;
 
 import java.util.Scanner;
 
+
+/**
+ *This class is pogram display window
+ * int i is option of user
+ * scn is information for user to input on program
+ * b1 is obj link to class Booked
+ */
 public class Menu {
     private Scanner scn = new Scanner(System.in);
     private int i = 0;
     Booked b1 = new Booked();
 
+
+    /**
+     *start program
+     */
     public void start(){
         while(this.i != 2){
             System.out.println("Welcome to the restaurant\n" +"Do you want to start program?");
